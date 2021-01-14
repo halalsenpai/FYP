@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Checkbox, Container, Header } from "semantic-ui-react";
 import "./formstyles.css";
 import Hours from "./Hours";
+import HoursTest from "./Hours.test";
 
 export default function BuisnessHours({ formData, setForm, navigation }) {
 	const [isToggle, setToggle] = useState(true);
@@ -32,7 +33,7 @@ export default function BuisnessHours({ formData, setForm, navigation }) {
 						<Checkbox toggle checked={!isToggle} onChange={toggled} />
 					</Container>
 				</Container>
-				{!isToggle ? <Hours /> : null}
+				{!isToggle ? <HoursTest /> : null}
 				<Button.Group fluid>
 					<Button secondary onClick={navigation.previous}>
 						Back

@@ -1,0 +1,17 @@
+div span {
+  font-size: 20px;
+  font-weight: 800;
+}
+.hour_div {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.toggle-div {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
